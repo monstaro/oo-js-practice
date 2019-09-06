@@ -7,14 +7,14 @@ describe('GradeBook', function() {
     assert.isFunction(GradeBook);
   });
 
-  it('should have an instructor', function() {
+  it.skip('should have an instructor', function() {
     var bio = new Course("Bio", 3);
     var gradebook = new GradeBook('Ms. Frizzle', bio);
 
     assert.equal(gradebook.instructor, 'Ms. Frizzle');
   });
 
-  it('should have aa course', function() {
+  it.skip('should have aa course', function() {
     var bio = new Course("Bio", 3);
     var gradebook = new GradeBook('Ms. Frizzle', bio);
 
@@ -22,7 +22,7 @@ describe('GradeBook', function() {
     assert.isObject(gradebook.course);
   });
 
-  it('should can calculate class average', function() {
+  it.skip('should can calculate class average', function() {
     var morgan = new Student({name: "Morgan", age: 21});
     var hillary = new Student({name: "Hillary", age: 29});
     var archie = new Student({name: "Archie", age: 27});
@@ -42,7 +42,7 @@ describe('GradeBook', function() {
     assert.equal(gradebook.calcClassAverage(), 80);
   });
 
-  it('should can list all passing students', function() {
+  it.skip('should can list all passing students', function() {
     // note: passing is considered as 60 average or higher
     var morgan = new Student({name: "Morgan", age: 21});
     var hillary = new Student({name: "Hillary", age: 29});
